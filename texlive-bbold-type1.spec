@@ -1,3 +1,9 @@
+# revision 20524
+# category Package
+# catalog-ctan /fonts/bbold-type1
+# catalog-date 2010-11-21 18:48:27 +0100
+# catalog-license other-free
+# catalog-version undef
 Name:		texlive-bbold-type1
 Version:	20101121
 Release:	1
@@ -52,6 +58,7 @@ doors as a business.
 %doc %{_texmfdistdir}/doc/fonts/bbold-type1/README
 %doc %{_texmfdistdir}/doc/fonts/bbold-type1/test.pdf
 %doc %{_texmfdistdir}/doc/fonts/bbold-type1/test.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -62,3 +69,5 @@ doors as a business.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
