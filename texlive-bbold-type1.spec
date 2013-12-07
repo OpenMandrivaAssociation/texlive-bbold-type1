@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-bbold-type1
 Version:	20101121
-Release:	5
+Release:	6
 Summary:	An Adobe Type 1 format version of the bbold font
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/bbold-type1
