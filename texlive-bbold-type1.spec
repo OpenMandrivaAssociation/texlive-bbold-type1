@@ -1,12 +1,12 @@
-# revision 20524
+# revision 33143
 # category Package
 # catalog-ctan /fonts/bbold-type1
-# catalog-date 2010-11-21 18:48:27 +0100
+# catalog-date 2014-03-09 23:53:06 +0100
 # catalog-license other-free
 # catalog-version undef
 Name:		texlive-bbold-type1
-Version:	20101121
-Release:	6
+Version:	20140309
+Release:	1
 Summary:	An Adobe Type 1 format version of the bbold font
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/bbold-type1
@@ -22,12 +22,11 @@ Requires(post):	texlive-kpathsea
 The files offer an Adobe Type 1 format version of the 5pt, 7pt
 and 10pt versions of the bbold fonts. The distribution also
 includes a map file, for use when incorporating the fonts into
-TeX documents, but no macro sets are provided (the fonts will
-not provide the correct results using macros designed for use
-with the MetaFont versions of the fonts. The fonts were
-produced to be part of the TeX distribution from Y&Y; they were
-generously donated to the TeX Users' Group when Y&Y closed its
-doors as a business.
+TeX documents; the macros provided with the original Metafont
+version of the font serve for the scaleable version, too. The
+fonts were produced to be part of the TeX distribution from
+Y&Y; they were generously donated to the TeX Users Group when
+Y&Y closed its doors as a business.
 
 %post
     %{_sbindir}/texlive.post
@@ -59,18 +58,3 @@ doors as a business.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Tue Jan 03 2012 Paulo Andrade <pcpa@mandriva.com.br> 20101121-2
-+ Revision: 749520
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 20101121-1
-+ Revision: 717892
-- texlive-bbold-type1
-- texlive-bbold-type1
-- texlive-bbold-type1
-- texlive-bbold-type1
-- texlive-bbold-type1
-
