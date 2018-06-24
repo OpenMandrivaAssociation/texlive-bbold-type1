@@ -5,7 +5,7 @@
 # catalog-license other-free
 # catalog-version undef
 Name:		texlive-bbold-type1
-Version:	20170414
+Version:	20180303
 Release:	1
 Summary:	An Adobe Type 1 format version of the bbold font
 Group:		Publishing
