@@ -5,8 +5,8 @@ Summary:	An Adobe Type 1 format version of the bbold font
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/bbold-type1
 License:	OTHER-FREE
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bbold-type1.r33143.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bbold-type1.doc.r33143.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bbold-type1.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/bbold-type1.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
