@@ -1,6 +1,6 @@
 Name:		texlive-bbold-type1
 Version:	33143
-Release:	1
+Release:	2
 Summary:	An Adobe Type 1 format version of the bbold font
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/bbold-type1
