@@ -12,7 +12,8 @@ Source0:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/bbold-type1.r%{t
 Source1:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/bbold-type1.doc.r%{tl_revision}.tar.xz
 BuildArch:	noarch
 BuildSystem:	texlive
-Provides:	texlive(%{tl_name}) = %{tl_revision}
+Requires:	texlive-tlpkg
+Provides:	texlive(%{tl_name}) = %{version}
 
 %description
 The files offer an Adobe Type 1 format version of the 5pt, 7pt and 10pt
@@ -23,3 +24,10 @@ scaleable version, too. The fonts were produced to be part of the TeX
 distribution from Y&Y; they were generously donated to the TeX Users
 Group when Y&Y closed its doors as a business.
 
+
+%install -a
+mkdir -p %{buildroot}%{_texmf_updmap_d}
+cat > %{buildroot}%{_texmf_updmap_d}/%{tl_name} <<'TL_DROPIN_EOF'
+# from bbold-type1:
+MixedMap bbold.map
+TL_DROPIN_EOF
